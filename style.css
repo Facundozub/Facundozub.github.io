@@ -361,7 +361,7 @@ li {
     rgba(241, 231, 103, 1) 100%
   );
   color: #ffffff;
-
+}
 .modal-header {
   border: none; 
 }
@@ -407,5 +407,4 @@ li {
   .colp {
     margin-top: 10vh;
   }
-}
 }
