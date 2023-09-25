@@ -1,0 +1,411 @@
+body {
+  height: 100vh;
+  font-family: "Montserrat", sans-serif;
+  background: rgba(210, 255, 82, 1);
+  background: -moz-linear-gradient(
+    -45deg,
+    rgba(210, 255, 82, 1) 0%,
+    rgba(145, 232, 66, 1) 100%
+  );
+  background: -webkit-gradient(
+    left top,
+    right bottom,
+    color-stop(0%, rgba(210, 255, 82, 1)),
+    color-stop(100%, rgba(145, 232, 66, 1))
+  );
+  background: -webkit-linear-gradient(
+    -45deg,
+    rgba(210, 255, 82, 1) 0%,
+    rgba(145, 232, 66, 1) 100%
+  );
+  background: -o-linear-gradient(
+    -45deg,
+    rgba(210, 255, 82, 1) 0%,
+    rgba(145, 232, 66, 1) 100%
+  );
+  background: -ms-linear-gradient(
+    -45deg,
+    rgba(210, 255, 82, 1) 0%,
+    rgba(145, 232, 66, 1) 100%
+  );
+  background: linear-gradient(
+    135deg,
+    rgba(210, 255, 82, 1) 0%,
+    rgba(145, 232, 66, 1) 100%
+  );
+}
+
+.enlaces {
+  padding: 0.01rem;
+  font-family: "Roboto Mono", monospace;
+  color: #777f91;
+}
+
+.fecha {
+  padding: 0.01rem;
+  font-family: "Roboto Mono", monospace;
+  color: #000000;
+}
+.texto {
+  font-family: "Playfair Display", serif;
+  color: #777f91;
+}
+.svgCard {
+  color: #000000;
+}
+.lineaNombre {
+  margin-bottom: 1rem;
+}
+.texto h1 {
+  font-weight: bolder;
+  font-family: "Montserrat", sans-serif;
+}
+.texto h5 {
+  font-weight: bolder;
+  font-size: 0.8rem;
+  font-family: "Montserrat", sans-serif;
+}
+.texto p {
+  margin-bottom: 0.04rem;
+  font-family: "Montserrat", sans-serif;
+  font-size: 1rem;
+}
+
+@media screen and (max-width: 576px) {
+  .texto {
+    margin-top: 2.5rem;
+    font-size: 1.5rem;
+  }
+}
+
+@media screen and (min-width: 577px) and (max-width: 768px) {
+  .texto {
+    margin-top: 2.5rem;
+    font-size: 1.8rem;
+  }
+}
+
+@media screen and (min-width: 769px) and (max-width: 992px) {
+  .texto {
+    margin-top: 1.5rem;
+    font-size: 2rem;
+  }
+}
+
+@media screen and (min-width: 1025px) {
+  .texto {
+    margin-top: 17rem;
+    font-size: 2.5rem;
+  }
+}
+ul {
+  animation: heartbeat 3.8s infinite;
+  text-shadow: 4px 2px 4px rgba(0, 0, 0, 0.2);
+  color: #777f91;
+}
+@keyframes heartbeat {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.01);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+li {
+  font-family: "Acme", sans-serif;
+  font-weight: bolder;
+  font-size: 9rem;
+  line-height: 1;
+}
+
+@media screen and (max-width: 576px) {
+  li {
+    margin-top: 1rem;
+    font-size: 5rem;
+  }
+}
+@media screen and (min-width: 420px) and (max-width: 576px) {
+  li {
+    font-size: 6rem;
+    margin-left:0 ;
+  }
+}
+
+@media screen and (min-width: 576px) and (max-width: 768px) {
+  li {
+    font-size: 7rem;
+    margin-left: 1rem;
+  }
+}
+
+/* Media query para dispositivos móviles medianos */
+@media screen and (min-width: 768px) and (max-width: 992px) {
+  li {
+    font-size: 8rem;
+    margin-left: 1rem;
+  }
+}
+
+/* Media query para tabletas */
+@media screen and (min-width: 992px) and (max-width: 1200px) {
+  li {
+    font-size: 7rem;
+    margin-left: 1rem;
+  }
+}
+
+
+@media screen and (min-width: 1200px) {
+  li {
+    font-size: 7rem;
+  }
+}
+
+.arrow {
+  margin-top: 1.5rem;
+  font-size: 3.5rem;
+  position: absolute;
+}
+
+.arrow::before {
+  content: "￫";
+  display: inline-block;
+  opacity: 0;
+  transform: translateX(-120%);
+  animation: slideArrow 1.9s infinite alternate;
+}
+
+@keyframes slideArrow {
+  0% {
+    opacity: 1;
+    transform: translateX(-110%);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(-130%);
+  }
+}
+.contact {
+  background: rgba(163, 141, 242, 1);
+  background: -moz-linear-gradient(
+    -45deg,
+    rgba(163, 141, 242, 1) 7%,
+    rgba(231, 36, 160, 1) 76%,
+    rgba(248, 11, 140, 1) 93%,
+    rgba(255, 0, 132, 1) 100%
+  );
+  background: -webkit-gradient(
+    left top,
+    right bottom,
+    color-stop(7%, rgba(163, 141, 242, 1)),
+    color-stop(76%, rgba(231, 36, 160, 1)),
+    color-stop(93%, rgba(248, 11, 140, 1)),
+    color-stop(100%, rgba(255, 0, 132, 1))
+  );
+  background: -webkit-linear-gradient(
+    -45deg,
+    rgba(163, 141, 242, 1) 7%,
+    rgba(231, 36, 160, 1) 76%,
+    rgba(248, 11, 140, 1) 93%,
+    rgba(255, 0, 132, 1) 100%
+  );
+  background: -o-linear-gradient(
+    -45deg,
+    rgba(163, 141, 242, 1) 7%,
+    rgba(231, 36, 160, 1) 76%,
+    rgba(248, 11, 140, 1) 93%,
+    rgba(255, 0, 132, 1) 100%
+  );
+  background: -ms-linear-gradient(
+    -45deg,
+    rgba(163, 141, 242, 1) 7%,
+    rgba(231, 36, 160, 1) 76%,
+    rgba(248, 11, 140, 1) 93%,
+    rgba(255, 0, 132, 1) 100%
+  );
+  background: linear-gradient(
+    135deg,
+    rgba(163, 141, 242, 1) 7%,
+    rgba(231, 36, 160, 1) 76%,
+    rgba(248, 11, 140, 1) 93%,
+    rgba(255, 0, 132, 1) 100%
+  );
+
+  color: #000000; 
+}
+.service {
+  background: rgba(153, 181, 242, 1);
+  background: -moz-linear-gradient(
+    -45deg,
+    rgba(153, 181, 242, 1) 10%,
+    rgba(134, 204, 178, 1) 68%,
+    rgba(123, 217, 142, 1) 100%
+  );
+  background: -webkit-gradient(
+    left top,
+    right bottom,
+    color-stop(10%, rgba(153, 181, 242, 1)),
+    color-stop(68%, rgba(134, 204, 178, 1)),
+    color-stop(100%, rgba(123, 217, 142, 1))
+  );
+  background: -webkit-linear-gradient(
+    -45deg,
+    rgba(153, 181, 242, 1) 10%,
+    rgba(134, 204, 178, 1) 68%,
+    rgba(123, 217, 142, 1) 100%
+  );
+  background: -o-linear-gradient(
+    -45deg,
+    rgba(153, 181, 242, 1) 10%,
+    rgba(134, 204, 178, 1) 68%,
+    rgba(123, 217, 142, 1) 100%
+  );
+  background: -ms-linear-gradient(
+    -45deg,
+    rgba(153, 181, 242, 1) 10%,
+    rgba(134, 204, 178, 1) 68%,
+    rgba(123, 217, 142, 1) 100%
+  );
+  background: linear-gradient(
+    135deg,
+    rgba(153, 181, 242, 1) 10%,
+    rgba(134, 204, 178, 1) 68%,
+    rgba(123, 217, 142, 1) 100%
+  );
+  color: #ffffff;
+}
+
+.sobremi {
+  background: rgba(255, 255, 255, 1);
+  background: -moz-linear-gradient(
+    -45deg,
+    rgba(255, 255, 255, 1) 28%,
+    rgba(28, 28, 242, 1) 92%,
+    rgba(0, 0, 240, 1) 100%
+  );
+  background: -webkit-gradient(
+    left top,
+    right bottom,
+    color-stop(28%, rgba(255, 255, 255, 1)),
+    color-stop(92%, rgba(28, 28, 242, 1)),
+    color-stop(100%, rgba(0, 0, 240, 1))
+  );
+  background: -webkit-linear-gradient(
+    -45deg,
+    rgba(255, 255, 255, 1) 28%,
+    rgba(28, 28, 242, 1) 92%,
+    rgba(0, 0, 240, 1) 100%
+  );
+  background: -o-linear-gradient(
+    -45deg,
+    rgba(255, 255, 255, 1) 28%,
+    rgba(28, 28, 242, 1) 92%,
+    rgba(0, 0, 240, 1) 100%
+  );
+  background: -ms-linear-gradient(
+    -45deg,
+    rgba(255, 255, 255, 1) 28%,
+    rgba(28, 28, 242, 1) 92%,
+    rgba(0, 0, 240, 1) 100%
+  );
+  background: linear-gradient(
+    135deg,
+    rgba(255, 255, 255, 1) 28%,
+    rgba(28, 28, 242, 1) 92%,
+    rgba(0, 0, 240, 1) 100%
+  );
+
+  color: #000000; 
+}
+.galery {
+  background: rgba(255, 153, 0, 1);
+  background: -moz-linear-gradient(
+    -45deg,
+    rgba(255, 153, 0, 1) 16%,
+    rgba(244, 216, 83, 1) 84%,
+    rgba(241, 231, 103, 1) 100%
+  );
+  background: -webkit-gradient(
+    left top,
+    right bottom,
+    color-stop(16%, rgba(255, 153, 0, 1)),
+    color-stop(84%, rgba(244, 216, 83, 1)),
+    color-stop(100%, rgba(241, 231, 103, 1))
+  );
+  background: -webkit-linear-gradient(
+    -45deg,
+    rgba(255, 153, 0, 1) 16%,
+    rgba(244, 216, 83, 1) 84%,
+    rgba(241, 231, 103, 1) 100%
+  );
+  background: -o-linear-gradient(
+    -45deg,
+    rgba(255, 153, 0, 1) 16%,
+    rgba(244, 216, 83, 1) 84%,
+    rgba(241, 231, 103, 1) 100%
+  );
+  background: -ms-linear-gradient(
+    -45deg,
+    rgba(255, 153, 0, 1) 16%,
+    rgba(244, 216, 83, 1) 84%,
+    rgba(241, 231, 103, 1) 100%
+  );
+  background: linear-gradient(
+    135deg,
+    rgba(255, 153, 0, 1) 16%,
+    rgba(244, 216, 83, 1) 84%,
+    rgba(241, 231, 103, 1) 100%
+  );
+  color: #ffffff;
+
+.modal-header {
+  border: none; 
+}
+
+
+.btn {
+  position: absolute;
+  font-family: "Acme", sans-serif;
+
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+.flechaBack {
+  margin-bottom: 0.6rem;
+}
+.subcat {
+  color: #40495a;
+  font-family: "Acme", sans-serif;
+  font-size: 7rem;
+
+  font-size: 3.3rem;
+}
+/*---Soobre mi ---------*/
+.imagenMi {
+  height: 15rem;
+}
+.sobreMi1 {
+  font-family: "Playfair Display", serif;
+
+  padding-top: 4rem;
+}
+.sobreMi2 {
+  font-family: "Playfair Display", serif;
+  margin-right: 2rem;
+  margin-top: 1rem;
+}
+
+.servisS {
+  font-family: "Playfair Display", serif;
+}
+
+@media screen and (min-width: 992px) {
+  .colp {
+    margin-top: 10vh;
+  }
+}
+}
